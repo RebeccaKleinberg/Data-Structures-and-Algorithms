@@ -1,3 +1,5 @@
+# http://zvkemp.github.io/blog/2014/04/25/binary-search-trees-in-ruby/
+
 require 'pry'
 
 module BinarySearchTree
