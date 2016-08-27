@@ -8,8 +8,12 @@ class MyHash
 	end
 
 	def assign_index(k) # k is a string
+		obj_id(k) % 100
+	end
+
+	def obj_id(k)
 		k = k.to_sym # must change from str to sym so that it always have the same obj id
-		k.object_id % 100
+		k.object_id
 	end
 
 	def insert(k, v)
