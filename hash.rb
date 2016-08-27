@@ -23,6 +23,7 @@ class MyHash
 	end
 
 	def find(k)
+		index = assign_index(k)
 		container[index].each do |pair|
 			if pair[0] == k
 				return pair[1]
