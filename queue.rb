@@ -11,28 +11,20 @@ require 'pry'
 class Queue
 	class Node
 		
-		attr_accessor :node, :next, :prev
+		attr_accessor :node, :next, :first, :last
 
 		def initialize(node)
 			@node = node
-			@first = nil
-			@last = nil
+			@first = true
+			@last = true
 		end
 
-		def self.first(node) # returns first node object
-
+		def add(item) # add to the end, when you add, this node becomes the last 
+			self.last = false
+			self.next = Queue::Node.new(item)
 		end
 
-		def self.last(node) # returns last node object
-
-		end
-
-		def self.add(item) # add to the end 
-			# @node.next = Queue::Node.new(item)
-			# @node.
-		end
-
-		def remove # remove from the start
+		def remove # remove from the start. When you remove, the next node becomes the first
 			# return node if node.next.nil?
 			# end
 		end
