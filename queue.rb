@@ -6,7 +6,9 @@
 # remove: returns the data (not the node, not the queue) - and removes the first node in the queue
 # peek: returns the data but does remove node from the queue
 # strech: write a recursive function that will remove all nodes in the queue ** pops all elements off ** 
+# O(1)
 require 'pry'
+
 
 class Queue
 	class Node
